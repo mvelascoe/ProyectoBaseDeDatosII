@@ -191,6 +191,6 @@ CREATE TABLE alumnoasignatura(
   idCursoEscolarAS INT(11) NOT NULL,
   CONSTRAINT pk_alumnoAsignaturaCurso PRIMARY KEY (idAlumnoAs, idAsigaturaAs, idCursoEscolarAS),
   CONSTRAINT fk_alumno_as FOREIGN KEY (idAlumnoAs) REFERENCES alumno(idAlumno),
-  CONSTRAINT fk_asignatura_as FOREIGN KEY (idAsigaturaAs) REFERENCES asignatura(idAsignatura),
+  CONSTRAINT fk_asignatura_as FOREIGN KEY (idAsigaturaAs) REFERENCES asignatura(idAsignatura)
 )ENGINE = InnoDB;
 
